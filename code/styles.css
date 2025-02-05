@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(18, 19, 21, 0.96);
+  color: rgba(232, 228, 198, 0.868);
+}
+
+img {
+  min-width: 300px;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0.6em 0;
+  filter: blur(.39px);
+}
+
+/* Classes */
+.regular {
+  font-family: cursive, sans-serif;
+  font-size: normal;
+  font-weight: 300;
+}
+
+.artistic {
+  font-family: "Srisakdi", system-ui;
+  font-size: small;
+  font-weight: 600;
+}
+
+.flexible {
+  display: flex;
+}
+
+.flex-y {
+  flex-direction: column;
+}
+
+.quoted {
+  line-height: 1.5rem;
+  letter-spacing: 0.09em;
+}
+
+.indented {
+  padding-left: 0.6rem;
+}
+
+.small-text {
+  font-size: x-small;
+  font-weight: 300;
+  font-style: oblique;
+}
+
+.left {
+  text-align: left;
+}
+
+.rounded {
+  border-radius: 12px 3px 12px 3px;
+}
+
+.blurred {
+  filter: blur(0.039em);
+}
+
+.shaded {
+  box-shadow: 0 0 12px rgba(80, 73, 55, 0.295);
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.long {
+  width: 810px;
+}
+
+.short {
+  width: calc(810px / 2);
+}
+
+/* Divider */
+.divider {
+  margin: 0 auto;
+  margin-top: 2.1em;
+  margin-bottom: 0.6em;
+  height: 2.4px;
+  border-radius: 50%;
+  background-color: rgba(246, 218, 169, 0.559);
+  box-shadow: 0 0 6px rgba(246, 218, 169, 0.868);
+  filter: blur(0.9px);
+}
+
+/* Header */
+.header {
+  width: 72vw;
+  max-width: 810px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 0 12px;
+  margin-top: 1.8em;
+}
+
+.header .tribute-person img {
+  height: 100%;
+  border: 3px dotted rgba(80, 73, 55, 0.295);
+}
+
+.header .quote {
+  width: 300px;
+  height: fit-content;
+}
+
+.header .quote p {
+  padding: 0.6em;
+  color: rgba(202, 167, 130, 0.709);
+}
+
+.header .quote span {
+  padding: 0.6em;
+  text-align: right;
+  filter: blur(0.09px);
+  color: inherit;
+}
+
+/* Main */
+.main {
+  min-width: calc(750 / 2);
+  width: 81vw;
+  max-width: 810px;
+}
+
+/* Timetable */
+.main .timetable-content {
+  max-width: 690px;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 137, 74, 0.863),
+    rgba(246, 218, 169, 0.868),
+    rgba(192, 137, 74, 0.863)
+  );
+  filter: blur(0.021em);
+  border-radius: 36px 2.4px 30px 4.2px;
+  box-shadow: -0.9px 0 9px rgba(190, 141, 86, 0.9);
+}
+
+.main .timetable-content p,
+span {
+  color: rgb(26, 28, 31);
+}
+
+/* Page */
+.main .timetable-content .page {
+  width: 49.5%;
+}
+
+.main .timetable-content .page .time-span-region:last-child {
+  margin-bottom: 1.81em;
+}
+
+.main .timetable-content .page .empty-line {
+  height: 36px;
+}
+
+.main .timetable-content .page .time-span-region p,
+span {
+  line-height: 1.2rem;
+  letter-spacing: 1.5px;
+  padding-top: 0.3rem;
+}
+
+.main .timetable-content .page .time-span-region span,
+.line-content {
+  border-bottom: 1.2px solid rgba(26, 28, 31, 0.841);
+}
+
+.main .timetable-content .page .time-span-region span {
+  display: block;
+  text-shadow: -0.9px 0 3px rgba(18, 19, 21, 0.96);
+}
+
+.main .timetable-content .page .time-span-region p {
+  min-height: 90px;
+}
+
+.main .timetable-content .page .time-span-region .line-content {
+  align-items: flex-start;
+}
+
+.main .timetable-content .page .time-span-region .line-content .bullet {
+  border: none;
+  margin-top: 0.9em;
+  min-width: 8.1px;
+  min-height: 8.1px;
+  border-radius: 50%;
+  background-color: rgba(18, 19, 21, 0.7);
+  margin-left: 0.39rem;
+  box-shadow: 0px 0 3px rgb(18, 19, 21);
+}
+
+.main .timetable-content .separator {
+  width: 1%;
+  background-color: rgba(190, 141, 86, 0.139);
+}
+
+/* Gallery */
+.main .gallery-content {
+  max-width: 750px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.2rem;
+  row-gap: 3rem;
+  padding: 0 1.5rem;
+}
+
+.main .gallery-content .painting img {
+  height: 360px;
+  border: 4.2px dotted rgba(80, 73, 55, 0.295);
+}
+
+.main .gallery-content .painting p {
+  padding: 0.3em;
+  text-align: center;
+  filter: blur(0.18px);
+  text-shadow: -0.3px 0 4.2px rgba(192, 137, 74, 0.644);
+  border-bottom: 2.1px dotted rgba(192, 137, 74, 0.644);
+}
+
+/* Footer */
+.footer {
+  justify-content: flex-end;
+  padding: 2.1em 0.3em 0.3em 0;
+}
+
+.footer p {
+  padding: 0.9em;
+  font-style: normal;
+  filter: blur(0.39px);
+}
+
+.footer span {
+  padding-left: 0.6rem;
+  color: rgba(202, 167, 130, 0.709);
+  text-shadow: -0.12px 0 12px rgba(192, 137, 74, 0.644);
+}
