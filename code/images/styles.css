@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(209, 209, 209, 0.877);
+  color: rgb(8, 10, 23);
+}
+
+/* Classes */
+.flexible {
+  display: flex;
+}
+
+.flex-y {
+  flex-direction: column;
+}
+
+.small-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: x-small;
+}
+
+.large-text {
+  font-family: cursive, sans-serif;
+  font-size: medium;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.spaced {
+  justify-content: space-between;
+}
+
+.letter-spaced {
+  letter-spacing: 0.09em;
+}
+
+.evenly-spaced {
+  justify-content: space-evenly;
+}
+
+.center-spaced {
+  justify-content: center;
+}
+
+.small-padded {
+  padding: 9px;
+}
+
+.large-padded {
+  padding: 21px;
+}
+
+.centered {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 18px;
+}
+
+.bottom-bounded {
+  border-bottom: 3px solid rgba(209, 209, 209, 0.877);
+}
+
+.top-bounded {
+  border-top: 3px solid rgba(209, 209, 209, 0.877);
+}
+
+.small-rounded {
+  border-radius: 12px;
+}
+
+.medium-col-gap {
+  column-gap: 0.48em;
+}
+
+.small-col-gap {
+  column-gap: 0.18em;
+}
+
+.small-row-gap {
+  row-gap: 0.12em;
+}
+
+.medium-top-space {
+  margin-top: 6px;
+}
+
+.small-top-space {
+  margin-top: 3px;
+}
+
+.secondary {
+  font-style: oblique;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.total-value {
+  background-color: rgb(209, 209, 255);
+}
+
+.half-width {
+  width: 50%;
+}
+
+.value {
+  background-color: rgba(255, 254, 254, 0.705);
+}
+
+.indented {
+  padding-left: 0.9em;
+}
+
+.shadowed {
+  box-shadow: 0 0 6px rgba(209, 209, 255, 0.83);
+}
+
+/* Containers */
+.outer-container {
+  height: 100vh;
+  padding: 27px;
+}
+
+.inner-container {
+  margin: 0 auto;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 254, 254, 0.705),
+    rgba(236, 236, 236, 0),
+    rgba(255, 254, 254, 0.705)
+  );
+  min-width: 900px;
+  max-width: 1000px;
+}
+
+/* Header */
+.header {
+  padding: 0 9px;
+}
+
+.header .panel-options .main-option {
+  width: 120px;
+}
+
+.fallback {
+  color: rgb(159, 153, 153);
+}
+
+.header .panel-options .main-option:hover {
+  background-color: rgba(255, 254, 254, 0.705);
+  box-shadow: 0 0 6px rgba(255, 254, 254, 0.705);
+}
+
+.header .profile .icon {
+  margin: 6px 9px 0 0;
+}
+
+.header .profile img {
+  min-width: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Main */
+.main {
+  height: 100vh;
+  padding: 21px 18px;
+  column-gap: 1.5em;
+}
+
+/* Side menu */
+.main .side-menu {
+  background-color: rgba(255, 254, 254, 0.705);
+}
+
+.main .side-menu .main-options .side-option,
+.main .side-menu .side-options .side-option {
+  padding-left: 12px;
+  padding-right: 39px;
+}
+
+.main .side-menu .main-options .side-option:last-child .icon,
+.main .side-menu .side-options .side-option:last-child .icon {
+  margin: 3px 3px 0 2px;
+}
+
+.main .side-menu .main-options .side-option:nth-child(3) .icon {
+  margin: 3px -2px 0 1px;
+}
+
+.main .side-menu .main-options .side-option:hover,
+.main .side-menu .side-options .side-option:hover {
+  background-color: rgb(209, 209, 255);
+  box-shadow: 0 0 6px rgba(209, 209, 255, 0.83);
+}
+
+/* Main container */
+.main .main-container {
+  width: 100vw;
+  background-color: rgba(255, 254, 254, 0.705);
+}
+
+.main .main-container .table-container {
+  width: 100%;
+}
+
+.main .main-container .table-container .title {
+  text-align: center;
+  font-size: x-large;
+  padding-left: 1.2em;
+  color: rgb(177, 151, 252);
+}
+
+.main .main-container .table-container .table .headline {
+  border-bottom: 3px solid rgba(209, 209, 209, 0.877);
+}
+
+.main .main-container .table-container .table .headline .time-line .year {
+  width: 30%;
+  padding-left: 1.2em;
+}
+
+.main .main-container .table-container .table .headline {
+  border-bottom: 3px solid rgba(209, 209, 255, 0.83);
+}
+
+.main .main-container .table-container .table .content .table-row:last-child {
+  border-bottom: 3px solid rgba(209, 209, 255, 0.83);
+  border-top: 3px solid rgba(209, 209, 255, 0.83);
+}
+
+.main .main-container .table-container .table .headline .year {
+  font-size: small;
+}
+
+.main
+  .main-container
+  .table-container
+  .table
+  .content
+  .table-row
+  .values
+  .content-value {
+  width: 30%;
+  padding-left: 1.5em;
+}
